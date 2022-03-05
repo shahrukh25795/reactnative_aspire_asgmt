@@ -38,7 +38,7 @@ const LimitModal = (props: LimitModalProps) => {
                 {STRING_CONSTANTS.setWeeklySpendingLimitText}
               </Text>
             </View>
-            <Amount style={styles.margin_15} amount="$5000" />
+            <Amount style={styles.margin_15} amount="5000" />
             <View style={styles.line} />
             <Text style={styles.textDesc}>
               {STRING_CONSTANTS.setWeeklySpendingLimitDescText}
