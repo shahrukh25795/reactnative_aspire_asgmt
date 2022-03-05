@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {navigationConstants} from '../utils/navigationConstants';
 import {Image, Text} from 'react-native';
 import {tabBarMenu} from '../utils/preConfig';
-import {styles} from '../utils/style';
+import {globalStyles} from '../utils/globalStyles';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,15 +19,18 @@ const MainTabNavigator = () => {
             tabBarLabel: ({focused}) => (
               <Text
                 style={[
-                  styles.tabLabelStyle,
-                  focused && styles.activeLabelColor,
+                  globalStyles.tabLabelStyle,
+                  focused && globalStyles.activeLabelColor,
                 ]}>
                 {item?.label}
               </Text>
             ),
             tabBarIcon: ({focused}) => (
               <Image
-                style={[styles.tabIconStyle, focused && styles.activeIconStyle]}
+                style={[
+                  globalStyles.tabIconStyle,
+                  focused && globalStyles.activeIconStyle,
+                ]}
                 source={item?.image}
               />
             ),

@@ -1,6 +1,6 @@
 import {StatusBar, View} from 'react-native';
 import React, {ReactNode} from 'react';
-import {styles} from '../utils/style';
+import {globalStyles} from '../utils/globalStyles';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 interface ThemeProps {
@@ -13,10 +13,9 @@ const Theme = (props: ThemeProps) => {
   return (
     <View
       style={[
-        styles.flex1,
-        styles.themeBackground,
-        styles.add_standard_horizontal_padding,
-        {paddingTop: 20 + top},
+        globalStyles.flex1,
+        globalStyles.themeBackground,
+        {paddingTop: 10 + top},
       ]}>
       <StatusBar barStyle="light-content" />
       {props?.children}
