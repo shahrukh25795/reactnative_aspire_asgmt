@@ -112,5 +112,6 @@ export const globalStyles = StyleSheet.create({
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
         paddingHorizontal: 20,
+        paddingBottom: 100,
     },
 });

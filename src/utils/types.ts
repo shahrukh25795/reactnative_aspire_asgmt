@@ -17,3 +17,16 @@ export type TouchableProps = CommonStyleProps & {
     onPress?: () => void;
     activeOpacity?: number;
 };
+
+export type CardContentType = {
+    heading: string;
+    description: string;
+    image: ImageSourcePropType | any;
+    isChecked: boolean;
+    needCheckBox: boolean;
+}
+
+export enum ToggleState {
+    STATE_ZERO = 0,
+    STATE_14 = 14,
+}

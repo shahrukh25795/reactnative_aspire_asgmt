@@ -5,4 +5,7 @@ export const colors = {
     grey: '#DDDDDD',
     theme_background: '#0C365A',
     transparent: 'transparent',
+    card_desc: '#222222',
+    card_heading: '#25345F',
+    checkBoxBack: '#EEEEEE',
 };

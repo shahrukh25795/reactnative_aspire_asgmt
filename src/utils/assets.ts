@@ -9,4 +9,9 @@ export const images = {
     close_eye: require('../assets/images/close_eye.png'),
     visalogo: require('../assets/images/visalogo.png'),
     aspirelogo: require('../assets/images/aspirelogo.png'),
+    top_up: require('../assets/images/top_up.png'),
+    weekly: require('../assets/images/weekly.png'),
+    freeze: require('../assets/images/freeze.png'),
+    deactivated_card: require('../assets/images/deactivated_card.png'),
+    new_card: require('../assets/images/new_card.png'),
 };
