@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { StyleSheet } from 'react-native';
 import { colors } from './colors';
+import { fonts } from './fonts';
 
 export const styles = StyleSheet.create({
     flex1: {
@@ -11,13 +12,15 @@ export const styles = StyleSheet.create({
     },
     tabLabelStyle: {
         color: colors.grey,
-        fontSize: 9,
+        fontSize: 10,
+        fontFamily: fonts.primary_medium_font,
     },
     tabIconStyle: {
         tintColor: colors.grey,
     },
     activeLabelColor: {
         color: colors.green,
+        fontFamily: fonts.primary_demi_bold_font,
     },
     activeIconStyle: {
         tintColor: colors.green,
@@ -28,8 +31,11 @@ export const styles = StyleSheet.create({
     },
     testingTextStyle: {
         textAlign: 'center',
-        // fontFamily: fonts.primary_bold_font,
+        fontFamily: fonts.primary_bold_font,
         color: colors.white,
-        fontSize: 20,
+        fontSize: 15,
+    },
+    add_standard_horizontal_padding: {
+        paddingHorizontal: 20,
     },
 });

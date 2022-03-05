@@ -12,7 +12,12 @@ const Theme = (props: ThemeProps) => {
 
   return (
     <View
-      style={[styles.flex1, styles.themeBackground, {paddingTop: 20 + top}]}>
+      style={[
+        styles.flex1,
+        styles.themeBackground,
+        styles.add_standard_horizontal_padding,
+        {paddingTop: 20 + top},
+      ]}>
       <StatusBar barStyle="light-content" />
       {props?.children}
     </View>
