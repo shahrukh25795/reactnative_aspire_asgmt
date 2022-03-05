@@ -85,7 +85,7 @@ export const globalStyles = StyleSheet.create({
     amountWrap: {
         backgroundColor: colors.green,
         paddingHorizontal: 10,
-        paddingVertical: 3,
+        paddingVertical: 2,
         borderRadius: 4,
     },
     amtSyb: {
@@ -100,7 +100,7 @@ export const globalStyles = StyleSheet.create({
         marginLeft: 15,
     },
     amtContainer: {
-        marginTop: 10,
+        marginTop: 8,
     },
 
 
@@ -108,7 +108,7 @@ export const globalStyles = StyleSheet.create({
     cardContainer: {
         flex: 1,
         backgroundColor: colors.white,
-        marginTop: 230,
+        marginTop: 270,
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
         paddingHorizontal: 20,

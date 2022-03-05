@@ -8,4 +8,6 @@ export const colors = {
     card_desc: '#222222',
     card_heading: '#25345F',
     checkBoxBack: '#EEEEEE',
+    progressBack: '#e5faf0',
+    greyLight: '#c8c8c8',
 };

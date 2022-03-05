@@ -4,14 +4,18 @@ import {globalStyles} from '../utils/globalStyles';
 import {images} from '../utils/assets';
 import {colors} from '../utils/colors';
 import {STRING_CONSTANTS} from '../utils/stringConstants';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const Header = () => {
+  const {top} = useSafeAreaInsets();
+
   return (
     <View
       style={[
         StyleSheet.absoluteFill,
         globalStyles.headerHeight,
         globalStyles.add_standard_horizontal_padding,
+        {marginTop: 10 + top},
       ]}>
       <View style={globalStyles.RSC}>
         <Text style={globalStyles.headerText}>

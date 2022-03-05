@@ -30,4 +30,5 @@ export const STRING_CONSTANTS = {
     deactivatedCardsDescText: 'Your previously deactivated cards',
     getANewCardText: 'Get a new card',
     getANewCardDescText: 'This deactivates your current debit cards',
+    debitCardSpendingLimitText: 'Debit card spending limit',
 };

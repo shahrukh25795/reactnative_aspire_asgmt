@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     marginLeft: 30,
   },
   expiryWrap: {
-    marginTop: 15,
+    marginTop: 10,
     marginBottom: 5,
   },
 });

@@ -6,6 +6,7 @@ import {globalStyles} from '../../utils/globalStyles';
 import DebitCard from './DebitCard';
 import {cardsOptions} from '../../utils/preConfig';
 import CardItem from './CardItem';
+import LimitProgress from './LimitProgress';
 
 const Cards = () => {
   const [cardsData, setCardsData] = useState([...cardsOptions]);
@@ -27,6 +28,7 @@ const Cards = () => {
           <View style={[globalStyles.headerHeight, StyleSheet.absoluteFill]} />
           <View style={globalStyles.cardContainer}>
             <DebitCard />
+            <LimitProgress />
             {cardsData.map((item, index) => (
               <CardItem
                 onToggle={() => onToggle(!item?.isChecked, index)}

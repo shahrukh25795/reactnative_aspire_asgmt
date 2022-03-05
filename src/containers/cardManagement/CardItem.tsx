@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     fontFamily: fonts.primary_regular_font,
-    color: colors.card_desc,
+    color: colors.greyLight,
     fontSize: 13,
     marginTop: 2,
   },
