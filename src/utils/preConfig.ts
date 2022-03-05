@@ -15,10 +15,13 @@ export const tabBarMenu: Array<TabBarMenuType> = [
 ];
 
 export const cardsOptions: Array<CardContentType> = [
-    { heading: STRING_CONSTANTS.topUpAccountText, description: STRING_CONSTANTS.topUpAccountDescText, image: images.top_up, isChecked: false, needCheckBox: false },
-    { heading: STRING_CONSTANTS.weeklySpendingLimitText, description: STRING_CONSTANTS.weeklySpendingLimitDescText, image: images.weekly, isChecked: false, needCheckBox: true },
-    { heading: STRING_CONSTANTS.freezeCardText, description: STRING_CONSTANTS.freezeCardDescText, image: images.freeze, isChecked: false, needCheckBox: true },
-    { heading: STRING_CONSTANTS.getANewCardText, description: STRING_CONSTANTS.getANewCardDescText, image: images.new_card, isChecked: false, needCheckBox: false },
-    { heading: STRING_CONSTANTS.deactivatedCardsText, description: STRING_CONSTANTS.deactivatedCardsDescText, image: images.deactivated_card, isChecked: false, needCheckBox: false },
+    { heading: STRING_CONSTANTS.topUpAccountText, description: STRING_CONSTANTS.topUpAccountDescText, image: images.top_up, isChecked: false, needCheckBox: false, type: 'Top Up' },
+    { heading: STRING_CONSTANTS.weeklySpendingLimitText, description: STRING_CONSTANTS.weeklySpendingLimitDescText, image: images.weekly, isChecked: false, needCheckBox: true, type: 'Weekly Limit' },
+    { heading: STRING_CONSTANTS.freezeCardText, description: STRING_CONSTANTS.freezeCardDescText, image: images.freeze, isChecked: false, needCheckBox: true, type: 'Freeze Card' },
+    { heading: STRING_CONSTANTS.getANewCardText, description: STRING_CONSTANTS.getANewCardDescText, image: images.new_card, isChecked: false, needCheckBox: false, type: 'New Card' },
+    { heading: STRING_CONSTANTS.deactivatedCardsText, description: STRING_CONSTANTS.deactivatedCardsDescText, image: images.deactivated_card, isChecked: false, needCheckBox: false, type: 'Deactivate Card' },
 ];
+
+export const amountOptions = ['S$ 5,000', 'S$ 10,000', 'S$ 20,000'];
+
 

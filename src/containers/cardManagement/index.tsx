@@ -7,9 +7,11 @@ import DebitCard from './DebitCard';
 import {cardsOptions} from '../../utils/preConfig';
 import CardItem from './CardItem';
 import LimitProgress from './LimitProgress';
+import LimitModal from '../../components/LimitModal';
 
 const Cards = () => {
   const [cardsData, setCardsData] = useState([...cardsOptions]);
+  const [isVisible, setIsVisible] = useState(false);
 
   const onToggle = (value: boolean, index: number) => {
     const allData = [...cardsData];
@@ -31,7 +33,12 @@ const Cards = () => {
             <LimitProgress />
             {cardsData.map((item, index) => (
               <CardItem
-                onToggle={() => onToggle(!item?.isChecked, index)}
+                onToggle={() => {
+                  onToggle(!item?.isChecked, index);
+                  if (item.type === 'Weekly Limit' && item?.isChecked) {
+                    setIsVisible(true);
+                  }
+                }}
                 key={index}
                 item={item}
               />
@@ -39,6 +46,9 @@ const Cards = () => {
           </View>
         </ScrollView>
       </View>
+      {isVisible && (
+        <LimitModal onClose={() => setIsVisible(false)} visible={isVisible} />
+      )}
     </Theme>
   );
 };

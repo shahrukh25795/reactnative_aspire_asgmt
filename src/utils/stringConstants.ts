@@ -31,4 +31,7 @@ export const STRING_CONSTANTS = {
     getANewCardText: 'Get a new card',
     getANewCardDescText: 'This deactivates your current debit cards',
     debitCardSpendingLimitText: 'Debit card spending limit',
+    saveText: 'Save',
+    setWeeklySpendingLimitText: 'Set a weekly debit card spending limit',
+    setWeeklySpendingLimitDescText: 'Here weekly means the last 7 days - not the calendar week',
 };

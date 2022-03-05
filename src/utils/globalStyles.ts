@@ -85,7 +85,7 @@ export const globalStyles = StyleSheet.create({
     amountWrap: {
         backgroundColor: colors.green,
         paddingHorizontal: 10,
-        paddingVertical: 2,
+        paddingVertical: 3,
         borderRadius: 4,
     },
     amtSyb: {

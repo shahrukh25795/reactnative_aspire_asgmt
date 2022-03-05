@@ -5,6 +5,7 @@ import {images} from '../utils/assets';
 import {colors} from '../utils/colors';
 import {STRING_CONSTANTS} from '../utils/stringConstants';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import Amount from './Amount';
 
 const Header = () => {
   const {top} = useSafeAreaInsets();
@@ -26,12 +27,7 @@ const Header = () => {
       <Text style={globalStyles.avlBalance}>
         {STRING_CONSTANTS.availableBalanceText}
       </Text>
-      <View style={[globalStyles.RFC, globalStyles.amtContainer]}>
-        <View style={globalStyles.amountWrap}>
-          <Text style={globalStyles.amtSyb}>{STRING_CONSTANTS.symbRsText}</Text>
-        </View>
-        <Text style={globalStyles.amt}>{STRING_CONSTANTS.amountText}</Text>
-      </View>
+      <Amount color={colors.white} amount={STRING_CONSTANTS.amountText} />
     </View>
   );
 };

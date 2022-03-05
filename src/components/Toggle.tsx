@@ -39,6 +39,7 @@ const Toggle = ({onChange, isToggleOn, disabled}: ToggleProps) => {
     const value = isToggleOn ? ToggleState.STATE_14 : ToggleState.STATE_ZERO;
     onToggleToggle(value);
     setIsMount(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -47,6 +48,7 @@ const Toggle = ({onChange, isToggleOn, disabled}: ToggleProps) => {
     } else {
       onToggleToggle(ToggleState.STATE_ZERO);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isToggleOn]);
 
   return (

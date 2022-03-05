@@ -24,9 +24,12 @@ export type CardContentType = {
     image: ImageSourcePropType | any;
     isChecked: boolean;
     needCheckBox: boolean;
+    type?: CardsActionType
 }
 
 export enum ToggleState {
     STATE_ZERO = 0,
     STATE_14 = 14,
 }
+
+export type CardsActionType = 'Top Up' | 'Weekly Limit' | 'Freeze Card' | 'New Card' | 'Deactivate Card';

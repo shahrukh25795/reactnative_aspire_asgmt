@@ -10,4 +10,6 @@ export const colors = {
     checkBoxBack: '#EEEEEE',
     progressBack: '#e5faf0',
     greyLight: '#c8c8c8',
+    dark_green_rgba: (alpha: string | number) => `rgba(0, 42, 43, ${alpha})`,
+    amountDesc: '#22222266',
 };

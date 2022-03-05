@@ -11,7 +11,10 @@ const MainTabNavigator = () => {
   return (
     <Tab.Navigator
       initialRouteName={navigationConstants.cards_screen}
-      screenOptions={{headerShown: false}}>
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {paddingTop: 3},
+      }}>
       {tabBarMenu?.map((item, index) => (
         <Tab.Screen
           key={index}

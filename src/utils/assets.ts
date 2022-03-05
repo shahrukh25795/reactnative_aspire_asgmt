@@ -14,4 +14,5 @@ export const images = {
     freeze: require('../assets/images/freeze.png'),
     deactivated_card: require('../assets/images/deactivated_card.png'),
     new_card: require('../assets/images/new_card.png'),
+    spend_limit: require('../assets/images/spend_limit.png'),
 };
